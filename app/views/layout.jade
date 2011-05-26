@@ -1,0 +1,19 @@
+!!! 5
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    title Test
+    
+    link(rel="stylesheet", href="/css/layout.css")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js")
+    script(src="/js/main.js")
+    
+  body
+    #container
+      header.group.bottom
+        h2.left Conference Manager
+        ul.navigation.right
+          li
+            a(href='/logout') Logout
+    
+      != body

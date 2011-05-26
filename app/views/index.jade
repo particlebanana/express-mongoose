@@ -1,0 +1,28 @@
+#panelForm
+  form(method="post", action="/panels")
+      
+    p
+      label Title
+      input.full(type="text", name="panel[title]")
+      
+    .meta.group
+      p.left
+        label Time
+        input(type="text", name="panel[time]")
+      
+      p.left
+        label Date
+        input(type="text", name="panel[date]")
+      
+    p
+      label Description
+      textarea.full(name="panel[description]")
+    
+    button.smooth(type="submit", value="Submit") Add New Session
+
+
+#panelList
+  ul
+    - each panel in panels
+      li.panel
+        = panel.title
